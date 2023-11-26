@@ -1,0 +1,19 @@
+<div class="content">
+    <div class="login">
+        <div class="user">
+            <form [formGroup]="login">
+                <div class="input-group flex-nowrap">
+                    <input formControlName="email" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                  <div class="input-group flex-nowrap">
+                    <input formControlName="password" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                </div>
+            </form>
+        </div>
+        <div class="photo"></div>
+        <div class="extradata">
+            <p>¿No tienes cuenta?<a [routerLink]="'../register'">registrate aquí</a></p>
+        </div>
+    </div>
+</div>

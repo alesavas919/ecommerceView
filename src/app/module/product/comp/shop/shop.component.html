@@ -1,0 +1,23 @@
+<div class="contins">
+    <div class="mainbar"></div>
+    <div class="filter">
+        <span>nombre,costo,detalles</span>
+    </div>
+    <div class="prodlist">
+        <div *ngFor="let item of productLst">
+            <span>{{item.name}}</span>
+            <span>{{item.cost}}</span>
+            <span>{{item.details}}</span>
+            <span>{{item.seller}}</span>
+            <button mat-raised-button color="primary" (click)="appendElement(item)">Agregar +</button>
+        </div>
+    </div>
+    <div class="mycart">
+        <div *ngFor="let item of myCart">
+            <span>{{item.name}}</span>
+            <span>{{item.cost}}</span>
+            <button mat-raised-button color="warn" (click)="removeElement(item)"> - </button>
+        </div>
+    </div><!--right-->
+</div>
+<div class="footer"></div>
